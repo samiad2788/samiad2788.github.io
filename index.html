@@ -1,107 +1,77 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Icon Libarary -->
-  <script src="https://use.fontawesome.com/750a16f689.js"></script>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
-
-  <!-- Custom font from Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Redressed&display=swap" rel="stylesheet">
-
-  <title>Sami</title>
-</head>
-
-<body id="dark-mode-bg">
-  <div class="canvas" id="dark-mode-canvas">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="dark-mode-nav">
-      <a class="navbar-brand" href="#">Sami</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-1">
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .block {
+            display: block;
+            text-align: left;
+            /* Additional styling */
+        }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-6 py-8">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-1/4 px-4 mb-8 lg:mb-0">
+          <div class="flex flex-col items-center text-center">
+            <img
+              alt="Portrait of Petit Prince"
+              class="rounded-full mb-4"
+              height="150"
+              src="./assets/petit.jpg"
+              width="150"
+            />
+            <h2 class="text-4xl text-green-600 font-bold">Sami</h2>
+            <h2 class="text-4xl text-green-600 font-bold">Ait Ouahmane</h2>
+            <p class="text-gray-700 mb-4">samiad2788 at gmail dot com</p>
+            <div class="flex space-x-4 mb-6">
+              <a class="text-gray-700" href="https://github.com/samiad2788" target="_blank">
+                <i class="fab fa-github"> </i>
+              </a>
+              <a class="text-gray-700" href="https://www.linkedin.com/in/sami-ait-ouahmane-762655145/"  target="_blank">
+                <i class="fab fa-linkedin-in"> </i>
+              </a>
+            </div>
+            <div class="text-green-600 text-lg font-semibold space-y-2">
+              <a class="block" href="#"> Home </a>
+              <a class="block" href="#"> About </a>
+              <a class="block" href="#"> Curriculum Vitae </a>
+            </div>
+            <div class="mt-8 text-gray-700 text-sm">
+              <p>© 2023. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="public/images/bertram.png" class="profile-picture">
-        </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-4" id="intro">
-          <h1 class="title dark-mode-word">Hi! I'm Sami Ait Ouahmane.</h1>
-          <h3 class="sub-title dark-mode-word">I'm a software engineer at Microsoft living in the Puget Sound Area.</h3>
-        </div>
-        <div class="col-md-2">
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid about" id="about">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <h1 class="dark-mode-word">About</h1>
-          <h3 class="dark-mode-word">I enjoy working on Large Language Models, Cloud Security, GPU optimizations, and
-            math puzzles, I hold a Bachelor's degree in Software Engineering from McGill University.</h3>
-          <img src="public/images/acheivements.png">
-        </div>
-        <div class="col-md-3"></div>
+        <div class="w-full lg:w-3/4 px-4">
+          <div class="mb-8">
+            <h2 class="text-3xl text-green-600 font-bold mb-4">About</h2>
+            <p class="text-gray-700 mb-4">
+              I'm a software engineer at Microsoft living in the Puget Sound Area. 
+              I enjoy working on Large Language Models, Cloud Security, GPU optimizations, and math puzzles. 
+              I hold a Bachelor's degree in Software Engineering from McGill University.
+            </p>
+          </div>
+          <div class="mb-8">
+            <h2 class="text-3xl text-green-600 font-bold mb-4">
+              Curriculum Vitae
+            </h2>
+            <p class="text-gray-700">
+              My latest CV is available
+              <a class="text-green-600" href="./assets/resumeSamiAitOuahmaneNew.pdf"  target="_blank"> here </a>
+              .
+            </p>
       </div>
     </div>
-
-    <div class="container-fluid footer">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <h1>Contact Me</h1>
-          <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/sami-ait-ouahmane-762655145/"
-            target="_blank"></a>
-        </div>
-        <div class="col-md-3"></div>
-      </div>
-    </div>
-  </div>
-  <!-- Custom JS -->
-  <script src="index.js"></script>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
